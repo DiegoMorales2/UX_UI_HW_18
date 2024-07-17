@@ -14,92 +14,171 @@
      <link rel="stylesheet" href="./assets/styles/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Cameron Morales Designer/Developer</title>
 </head>
 <body>
-    <header>
-        <h2 class="logo">CAMERON</h2>
+   <section class="first-section">
+        <header class="nav-container">
+            <h2><a href="">CAMERON</a></h2>
 
-        <img src="./assets/images/mobile-menu.svg" alt="mobile-menu" id="mobile-cta" class="mobile-menus">
-        <img src="./assets/images/mobile-x.svg" alt="mobile-exit"id="mobile-menu-exit" class="mobile-menus">
+            <img src="./assets/images/mobile-menu.svg" alt="mobile-menu" id="mobile-cta" class="mobile-menus">
+            <img src="./assets/images/Vector.svg" alt="mobile-exit"id="mobile-menu-exit" class="mobile-menus">
 
             <nav id="header-nav">
                     <a href="" class="navbar">About</a>
                     <a href="" class="navbar">Work</a>
                     <a href="" class="navbar">Contact</a>
             </nav>
-    </header>
+        </header>
 
-    <section class="heroimg">
-        <!-- <img src="./assets/images/hero-img.png" alt="Macbook half-tilted with warm ambient light" class="hero-img-background"> -->
-        <h1 class="hero-text">CAMERON IS A DESIGNER WHO THRIVES ON MAKING DIGITAL EXPERIENCES MEMORABLE.</h1>
+        <div id="container">
+            <span id="text1"></span>
+            <span id="text2"></span>
+        </div>
+        <svg id="filters">
+            <defs>
+                <filter id="threshold">
+                    <feColorMatrix in="SourceGraphic"
+                                   type="matrix"
+                                   values="1 0 0 0 0
+                                           0 1 0 0 0
+                                           0 0 1 0 0
+                                           0 0 0 255 -140" />
+                </filter>
+            </defs>
+        </svg>
+
+        <img src="./assets/images/New Project (1) 2.png" alt="Cameron Morales image" class="hero-img">
+
+   </section>
+
+   <section class="about">
+    <h1>About</h1>
+
+    <aside>
+        <p>Hi there! I'm a UX/UI designer and front-end developer who loves turning ideas into intuitive and engaging digital experiences. With a focus on user-centered design, I ensure every interaction feels seamless and impactful. Let's bring your vision to life with creativity and precision.</p>
+    </aside>
+    <section class="workhistory">
+        <h3>CURRENTLY DESIGNING AT:</h3>
+        <div>
+            <img src="./assets/images/chick.png" alt="chick-fil-a logo">
+            <p><span>Chick-fil-a</span> Shift Manager <br>06/2023 - Currently works here</p>
+        </div>
+        <div>
+            <img src="./assets/images/target.png" alt="Target logo">
+            <p><span>Target</span> Closing Lead <br>08/2022 - 06/2023</p>
+        </div>
+    </section>
+   </section>
+
+   <section class="project-section">
+
+    <section class="project-header">
+        <h1><img src="./assets/images/down-arrow.svg" alt="Arrow pointing down">Projects</h1>
     </section>
 
-    <section class="about-section">
-        <aside class="container">
-            <img src="./assets/images/cameron-morales.png" alt="Cameron Morales headshot">
-            <blockquote>I don't usually like pictures of myself, but I'm rather proud of this moment in my journey, so in the bio it goes. If you want to chat, golf, or grab a drink and talk design, don't hesitate to send me an email or a tweet.</blockquote>
-        </aside>
+    <section class="skills">
 
-        <aside class="about-me-section">
-            <h3>ABOUT CAMERON MORALES</h3>
-            <p>Cameron Morales is a designer originally from Idalou, TX, with a passion for exploring and creating. Growing up in a small town, Cameron always knew he was destined for something greater. His journey began at 14 when he learned Java and built his first computer, sparking an interest in design and technology. This passion led him to pursue an architecture degree in Santa Monica before returning to Texas to pursue a graphic design degree.
-            </p>
-            <p>At UTSA, Cameron refined his UX/UI skills, mastering techniques in HTML, CSS, and JavaScript, and discovering a new hobby in coding. His versatile skill set also extends to cinematography and photography, allowing him to tackle diverse challenges and build amazing websites.
-            </p>
-            <p>Cameron enjoys going to the gym, golfing, and spending time with friends and family. His love for design and storytelling drives him to create impactful and user-friendly experiences. Whether he's behind the camera or crafting prototypes, Cameron brings creativity and quality to every project.</p>
+        <aside>
+            <h3>Time Frame</h3>
+            <ul>
+                <li>Year 2024</li>
+            </ul>
         </aside>
 
         <aside>
-            <section class="digital">
-                <h3>DIGITAL CAPABILITIES</h3>
-                <ul>
-                    <li>Websites</li>
-                    <li>IOS and Android Apps</li>
-                    <li>Research</li>
-                </ul>
-            </section>
-
-            <section class="brand">
-                <h3>BRAND CAPABILITIES</h3>
-                <ul>
-                    <li>Cinematography</li>
-                    <li>Photography</li>
-                    <li>Post-Production</li>
-                </ul>
-            </section>
+            <h3>Discipline</h3>
+            <ul>
+                <li>UX Research</li>
+                <li>UI Design</li>
+                <li>HTML/CSS/JS Development</li>
+                <li>Art Direction</li>
+            </ul>
         </aside>
+
+        <aside>
+            <h3>Tools</h3>
+            <ul>
+                <li>Figma</li>
+                <li>VS Code</li>
+                <li>Github</li>
+                <li>Photoshop</li>
+            </ul>
+        </aside>
+
+        <aside>
+            <h3>Skills</h3>
+            <div class="skills"><p>UX Research</p></div>
+            <div class="skills"><p>UI Design</p></div>
+            <div class="skills"><p>Front-end Dev</p></div>
+            <div class="skills"><p>Information Architecture</p></div>
+        </aside>
+
     </section>
 
-    <div class="line-seperator">
-        <img src="./assets/images/Line 193.svg" alt="">
-    </div>
+    <section class="mywork">
 
-    <section class="contact-section">
-        <h2 id="contact-header">Contact</h2>
-        <div class="contact-links" id="contact-linksall">
-            <h3>LET'S WORK TOGETHER</h3>
-            <ul>
-                <li><a href="mailto:diego.morales5048@gmail.com">diego.morales5048@gmail.com</a></li>
-                <li><a href="https://www.linkedin.com/in/cameron-morales-7190a62b8/" target="_blank">LinkedIn</a></li>
-                <li><a href="https://www.behance.net/cameronmorales" target="_blank">Behance</a></li>
-            </ul>
+        <div class="projects">
+            <aside>
+                <img src="./assets/images/figma-logo-nocolor.svg" alt="Figma Logo">
+                <div>
+                    <p>Hope 4 Kids</p>
+                </div>
+            </aside>
+            <aside>
+                <button >View More <img src="./assets/images/arrow-top-right.svg" alt="View More Projects"></button>
+            </aside>
         </div>
 
-        <div class="experience" id="experience-all">
-            <h3>EXPERIENCE</h3>
-            <ul>
-                <li>Shift Manager at Chick fil a</li>
-                <li>Freelance Designer</li>
-                <li>Team Lead at Target</li>
-                <li>Freelance Photographer</li>
-                <li>Freelance Cinematographer</li>
-            </ul>
+        <div class="projects">
+            <aside>
+                <img src="./assets/images/figma-logo-nocolor.svg" alt="Figma Logo">
+                <div>
+                    <p>National Security Agency</p>
+                </div>
+            </aside>
+            <aside>
+                <button >View More <img src="./assets/images/arrow-top-right.svg" alt="View More Projects"></button>
+            </aside>
+        </div>
 
-            <a href="./assets/CAMERON-MORALES-RESUME.zip" download class="resume">Download Resume</a>
+        <div class="projects">
+            <aside>
+                <img src="./assets/images/figma-logo-nocolor.svg" alt="Figma Logo">
+                <div>
+                    <p>MotivateMe</p>
+                </div>
+            </aside>
+            <aside>
+                <button >View More <img src="./assets/images/arrow-top-right.svg" alt="View More Projects"></button>
+            </aside>
+        </div>
+
+        <div class="projects">
+            <aside>
+                <img src="./assets/images/figma-logo-nocolor.svg" alt="Figma Logo">
+                <div>
+                    <p>TravMe</p>
+                </div>
+            </aside>
+            <aside>
+                <button >View More <img src="./assets/images/arrow-top-right.svg" alt="View More Projects"></button>
+            </aside>
+        </div>
+
+    </section>
+
+    <section class="bigbuttons">
+        <button><h1>LinkedIn</h1></button>
+        <button><h1>Behance</h1></button>
+    </section>
+
+    <section class="last-section">
+        <div>
+            <h1>Experience design, reimagined by Cameron. <img src="./assets/images/arrow-top-right.svg" alt="arrow pointing top right"></h1>
         </div>
     </section>
-    <button class="resume-button" id="button-resume">Download Resume</button>
+
     <footer>
         <h2 class="logo-footer">CAMERON</h2>
             <nav>
@@ -114,32 +193,8 @@
             </nav>
     </footer>
 
-    <script>
-          document.addEventListener('DOMContentLoaded', function () {
-            const mobileBtn = document.getElementById('mobile-cta');
-            const nav = document.getElementById('header-nav');
-            const mobileBtnExit = document.getElementById('mobile-menu-exit');
-
-            mobileBtn.addEventListener('click', () => {
-                // Toggle menu-btn class on the nav element
-                nav.classList.toggle('menu-btn');
-                // Toggle the image source based on menu state
-                if (nav.classList.contains('menu-btn')) {
-                    mobileBtn.src = "assets/images/Vector.svg"; // Image when menu is active
-                } else {
-                    mobileBtn.src = "assets/images/mobile-menu.svg"; // Image when menu is inactive
-                }
-            });
-
-            mobileBtnExit.addEventListener('click', () => {
-                // Remove menu-btn class when exiting menu
-                nav.classList.remove('menu-btn');
-                // Reset image source if needed
-                mobileBtn.src = "assets/images/mobile-menu.svg"; // Adjust as necessary
-            });
-        });
-
-    </script>
+   </section>
+   <script src="./assets/scripts/javascript.js"></script>
 
 </body>
 </html>
