@@ -108,10 +108,11 @@ body {
 }
 
 .first-section {
+  margin-top: 4rem;
   display: flex;
   justify-content: center;
   align-content: center;
-  height: 25vh;
+  height: 35vh;
 }
 
 .first-section div {
