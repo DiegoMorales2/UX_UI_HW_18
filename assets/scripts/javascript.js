@@ -6,13 +6,11 @@ const elts = {
 };
 
 const texts = [
-    "Why",
-    "is",
-    "this",
-    "so",
-    "satisfying",
-    "to",
-    "watch?"
+    "Hello, I am",
+    "CAMERON",
+    "I am a",
+    "UX/UI Designer",
+    "Front end Developer",
 ];
 
 

@@ -17,24 +17,39 @@
     <title>Cameron Morales Designer/Developer</title>
 </head>
 <body>
+    <header class="nav-container">
+
+        <!-- <img src="./assets/images/mobile-menu.svg" alt="mobile-menu" id="mobile-cta" class="mobile-menus">
+        <img src="./assets/images/Vector.svg" alt="mobile-exit"id="mobile-menu-exit" class="mobile-menus"> -->
+
+        <nav id="header-nav" class="headernav">
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#" class="navbar"><svg width="20" height="20" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 25L25 1M1 1L25 25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg></a></li>
+                <li><a href="" class="navbar">About</a></li>
+                <li><a href="" class="navbar">Work</a></li>
+                <li><a href="" class="navbar">Contact</a></li>
+            </ul>
+            <ul class="desktopnav">
+                <li><a href="">CAMERON</a></li>
+                <li><a href="" class="desktop-links">About</a></li>
+                <li><a href="" class="desktop-links">Work</a></li>
+                <li><a href="" class="desktop-links">Contact</a></li>
+                <li onclick=showSidebar()><a href="#" class="navbar"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
+                    <path d="M1.8418 1.75879H18.3457M1.8418 7.01003H18.3457M1.8418 12.2613H18.3457" stroke="black" stroke-width="2.00047" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
    <section class="first-section">
-        <header class="nav-container">
-            <h2><a href="">CAMERON</a></h2>
-
-            <img src="./assets/images/mobile-menu.svg" alt="mobile-menu" id="mobile-cta" class="mobile-menus">
-            <img src="./assets/images/Vector.svg" alt="mobile-exit"id="mobile-menu-exit" class="mobile-menus">
-
-            <nav id="header-nav">
-                    <a href="" class="navbar">About</a>
-                    <a href="" class="navbar">Work</a>
-                    <a href="" class="navbar">Contact</a>
-            </nav>
-        </header>
-
         <div id="container">
+            <img src="./assets/images/New Project (1) 2.png" alt="Cameron Morales" class="hero-img" height="500px" >
             <span id="text1"></span>
             <span id="text2"></span>
         </div>
+    </section>
         <svg id="filters">
             <defs>
                 <filter id="threshold">
@@ -47,10 +62,6 @@
                 </filter>
             </defs>
         </svg>
-
-        <img src="./assets/images/New Project (1) 2.png" alt="Cameron Morales image" class="hero-img">
-
-   </section>
 
    <section class="about">
     <h1>About</h1>
@@ -195,6 +206,15 @@
 
    </section>
    <script src="./assets/scripts/javascript.js"></script>
-
+   <script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+    </script>
 </body>
 </html>
