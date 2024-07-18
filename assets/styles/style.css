@@ -108,18 +108,18 @@ body {
 }
 
 .first-section {
-  margin-top: 4rem;
+  margin: 1rem;
   display: flex;
   justify-content: center;
   align-content: center;
+  flex-wrap: nowrap;
   height: 50vh;
 }
 
 .first-section div {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
-  justify-content: center;
 }
 
 .hero-img {
@@ -179,39 +179,41 @@ body {
   /* Center the text in the viewport. */
   margin: auto;
   width: 100%;
-  height: 80pt;
+  height: 90%;
   z-index: -1;
   overflow: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   /* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
   /* filter: url(#threshold) blur(0.6px); */
 }
 
 /* Your average text styling */
 .first-section h1 {
-  position: absolute;
-  width: 940px;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 300px;
+  width: 100%;
+  font-family: "DM Sans", sans-serif;
+  font-size: 80px;
   text-align: center;
   background-image: url(https://media.giphy.com/media/RHIKETUlUINYvV7CAO/giphy.gif?cid=790b7611cwkmi5iylx997ojtsajyib6faqdylm2wnfd4k12z&ep=v1_gifs_search&rid=giphy.gif&ct=g);
   background-size: cover;
   color: transparent;
   -moz-background-clip: text;
   -webkit-background-clip: text;
-  text-transform: uppercase;
-  margin: 10px 0;
+  margin: 2rem 0;
   user-select: none;
   animation: 8s ease-in infinite textanimation;
 }
 
-@keyframes textanimation{
+/* @keyframes textanimation{
   from {
     transform: translateX(680px);
   }
   to {
     transform: translateX(-650px);
   }
-}
+} */
 
 .about{
   height: 33rem;
