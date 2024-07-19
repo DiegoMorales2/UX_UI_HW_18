@@ -62,7 +62,11 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url(/assets/images/pixar\ me.png);
+  background-image: url(/assets/images/pattern-randomized.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(1px);
+  overflow: hidden;
   /* display: flex;
   justify-content: center;
   align-items: center; */
@@ -115,17 +119,21 @@ body {
   align-content: center;
   flex-wrap: nowrap;
   height: 50vh;
+  overflow: hidden;
 }
 
 .first-section div {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  
 }
 
 .hero-img {
- justify-self: flex-start;
- transform: scale(.2)
+ z-index: -999;
+ position: absolute;
+ left: 40%;
+ overflow: hidden;
 }
 
 #header-nav .sidebar {
@@ -181,27 +189,28 @@ body {
   width: 100%;
   height: 90%;
   z-index: -1;
-  overflow: visible;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   /* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
   /* filter: url(#threshold) blur(0.6px); */
 }
+
+
 
 /* Your average text styling */
 .first-section h1 {
   width: 100%;
   font-family: "DM Sans", sans-serif;
-  font-size: 80px;
-  text-align: center;
+  font-size: 64px;
   background-image: url(https://media.giphy.com/media/RHIKETUlUINYvV7CAO/giphy.gif?cid=790b7611cwkmi5iylx997ojtsajyib6faqdylm2wnfd4k12z&ep=v1_gifs_search&rid=giphy.gif&ct=g);
   background-size: cover;
   color: transparent;
   -moz-background-clip: text;
   -webkit-background-clip: text;
-  margin: 2rem 0;
+  margin: .5rem 0;
   user-select: none;
   animation: 8s ease-in infinite textanimation;
 }
