@@ -86,3 +86,73 @@
 
 
 // animate();
+
+// $(document).ready(function(){
+//     $("#asideOne").on("click", function(){
+//       $("#card-container").css("display", "flex");
+//     });
+//   });
+
+// Function to handle haptic feedback
+// function vibrate() {
+//     if ("vibrate" in navigator) {
+//       navigator.vibrate(200); // Vibrate for 200 milliseconds
+//     }
+//   }
+  
+//   // Function to handle the intersection
+//   function handleIntersection(entries, observer) {
+//     entries.forEach(entry => {
+//       if (entry.isIntersecting) {
+//         $("#card-container").css("display", "flex");
+//         vibrate();
+//       } else {
+//         $("#card-container").css("display", "none");
+//       }
+//     });
+//   }
+  
+//   // Create the observer
+//   let options = {
+//     root: null, // Use the viewport as the root
+//     rootMargin: '0px',
+//     threshold: 1 // Trigger when 50% of the target is visible
+//   };
+  
+//   let observer = new IntersectionObserver(handleIntersection, options);
+  
+//   // Observe the target element
+//   observer.observe(document.querySelector("#asideOne"));
+
+function vibrate() {
+    if ("vibrate" in navigator) {
+      navigator.vibrate(200); // Vibrate for 200 milliseconds
+    }
+  }
+
+//   // Function to handle the intersection
+//   function handleIntersection(entries, observer) {
+//     entries.forEach(entry => {
+//       const cardContainer = $(entry.target).find('.card-container');
+//       if (entry.isIntersecting) {
+//         cardContainer.css("display", "flex");
+//         vibrate();
+//       } else {
+//         cardContainer.css("display", "none");
+//       }
+//     });
+//   }
+
+//   // Create the observer
+//   let options = {
+//     root: null, // Use the viewport as the root
+//     rootMargin: '0px',
+//     threshold: 0.5 // Trigger when 50% of the target is visible
+//   };
+
+//   let observer = new IntersectionObserver(handleIntersection, options);
+
+//   // Observe all aside elements
+//   document.querySelectorAll("aside").forEach(aside => {
+//     observer.observe(aside);
+//   });
