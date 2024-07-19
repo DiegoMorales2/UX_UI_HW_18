@@ -462,6 +462,7 @@ body {
 
 .bigbuttons button h1 {
   font-size: 4rem;
+  color: black;
 }
 
 .bigbuttons button:last-child {
