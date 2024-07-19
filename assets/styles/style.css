@@ -66,7 +66,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   backdrop-filter: blur(1px);
-  overflow: hidden;
+  overflow-x: hidden;
+  max-width: 100%;
   /* display: flex;
   justify-content: center;
   align-items: center; */
@@ -113,13 +114,15 @@ body {
 }
 
 .first-section {
-  margin: 1rem;
+  margin:0;
+  padding-left: 1rem;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-wrap: nowrap;
-  height: 50vh;
+  height: 65vh;
   overflow: hidden;
+  position: relative;
 }
 
 .first-section div {
@@ -132,7 +135,8 @@ body {
 .hero-img {
  z-index: -999;
  position: absolute;
- left: 40%;
+ left: 45%;
+ top: 20%;
  overflow: hidden;
 }
 
@@ -210,7 +214,7 @@ body {
   color: transparent;
   -moz-background-clip: text;
   -webkit-background-clip: text;
-  margin: .5rem 0;
+  margin: 4rem 0 0;
   user-select: none;
   animation: 8s ease-in infinite textanimation;
 }
@@ -276,3 +280,204 @@ body {
   width: 50px;
   height: 50px;
 }
+
+.workhistory div p {
+  color: #B6B4B4;
+}
+
+.workhistory div p span {
+  color: white;
+}
+
+.project-section {
+  display: grid;
+  margin: 0 .5rem;
+  height: 1060px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 90px 405px 372px;
+  grid-template-areas: "projectTitle"
+                      "projectSkills"
+                      "projectWork";
+}
+
+.project-header img {
+  width: 42px;
+  height: 40px;
+  stroke-width: 4.001px;
+  stroke: #000;
+  margin-right: 1rem;
+}
+
+.project-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 90px;
+  border-bottom: solid 1px black;
+  width: 98%;
+  justify-self: center;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: .5fr 1fr;
+  grid-template-areas: "time-frame discipline"
+                        "tools skillsgrid";
+  height: 420px;
+  width: 408px;
+  margin: .5rem;
+}
+
+.skills ul{
+  list-style-type: none;
+}
+
+.skills li{
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.skills h3{
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.timeframe{
+  height: 21px;
+}
+
+.skill {
+  border: solid 1px;
+  border-radius: 3rem;
+  padding: .5rem;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-wrap: nowrap;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem .3rem;
+}
+
+.skills-grid h3 {
+  width: 100%;
+  align-self: flex-start;
+}
+
+.tools h3 {
+  margin: 0;
+}
+
+.mywork {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 98%;
+  height: 672px;
+  padding: 1rem 0;
+}
+
+.travmeborder{
+  border-bottom: solid 1px;
+  padding: .5rem;
+}
+
+.travmeborder img {
+  margin-right: 1rem;
+}
+
+.projects button{
+  display: none
+}
+
+.projects {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.projects aside {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-top: solid 1px;
+  padding: .5rem;
+}
+
+.projects div{
+  display: flex;
+  align-items: center;
+  text-wrap: nowrap;
+  height: 62px;
+  margin: .5rem 0;
+  width: 75%;
+  border-left: solid 1px;
+  padding: 1rem;
+}
+
+.projects aside img {
+  margin-right: 1rem;
+}
+
+.projects div p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.button-view{
+  display: none;
+}
+
+.bigbuttons {
+  height: 811px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.bigbuttons button {
+  height: 50%;
+  display: flex;
+  padding: 1.5rem;
+  align-items: flex-end;
+  border-radius: .5rem;
+  border: none;
+  background-color: #7BB4EF;
+}
+
+.bigbuttons button h1 {
+  font-size: 4rem;
+}
+
+.bigbuttons button:last-child {
+  background-color: #F08381;
+}
+
+.last-section div { 
+  height:315px ;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+}
+.last-section div h1{
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+
+
