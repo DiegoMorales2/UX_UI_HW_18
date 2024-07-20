@@ -386,7 +386,7 @@ body {
   align-items: center;
   align-content: center;
   width: 94%;
-  height: 1800px;
+  height: 4000px;
   padding: 1rem 0;
 }
 
@@ -510,6 +510,187 @@ body {
   border-left: none;
 }
 
+#card-container-NSA {
+  width: 100%;
+  height:520px;
+  overflow: hidden;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: .8rem;
+  background: linear-gradient(0deg, #1AA807 0%, #79FE79 100%);
+}
+
+#nsa-hero {
+  position: absolute;
+  transform: scale(1.1);
+  top: 9%;
+  left: 54%;
+}
+
+#nsa-align {
+  position: absolute;
+  transform: scale(1.1);
+  top: 0%;
+  left: 0%;
+}
+
+#card-contents-NSA {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: .6rem;
+  width: 60%;
+  position:relative;
+  top: 70%;
+  left: 0;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  border-left: none;
+}
+
+#card-contents-NSA h1 {
+  flex-grow: 1;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+
+#card-contents-NSA div {
+  display: flex;
+  padding: .2rem .8rem;
+  margin-top: 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #000;
+  height: fit-content;
+  width: fit-content;
+  align-self: flex-end;
+}
+
+#card-container-fitbud {
+  width: 100%;
+  height:520px;
+  overflow: hidden;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: .8rem;
+  background: linear-gradient(185deg, #FFF 4.33%, #D3B9DD 63.72%, #9375B4 92.48%);
+}
+
+#fitbud1 {
+  position: absolute;
+  transform: scale(1.1);
+  top: 30%;
+  left: 23%;
+}
+
+#fitbud2 {
+  position: absolute;
+  transform: scale(1.1);
+  top: -1%;
+  left: 4%;
+}
+
+#card-contents-fitbud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: .6rem;
+  width: 60%;
+  position:relative;
+  top: 75%;
+  left: 0;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  border-left: none;
+}
+
+#card-contents-fitbud h1 {
+  flex-grow: 1;
+  width: 100%;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+
+#card-contents-fitbud div {
+  display: flex;
+  padding: .2rem .8rem;
+  margin-top: 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #000;
+  height: fit-content;
+  width: fit-content;
+  align-self: flex-end;
+}
+
+#card-container-travme {
+  width: 100%;
+  height:520px;
+  overflow: hidden;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: .8rem;
+  background: linear-gradient(185deg, #F6D372 4.33%, #FBC876 63.72%, #FA9D34 92.48%);
+}
+
+#travme1 {
+  position: absolute;
+  transform: scale(1.1);
+  top: 10%;
+  left: 5%;
+}
+
+#card-contents-travme {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: .6rem;
+  width: 60%;
+  position:relative;
+  top: 75%;
+  left: 0;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  border-left: none;
+}
+
+#card-contents-travme h1 {
+  flex-grow: 1;
+  width: 100%;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+
+#card-contents-travme div {
+  display: flex;
+  padding: .2rem .8rem;
+  margin-top: 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #000;
+  height: fit-content;
+  width: fit-content;
+  align-self: flex-end;
+}
+
 .projects div p {
   font-family: 'DM Sans', sans-serif;
   font-size: 1.5rem;
@@ -526,6 +707,10 @@ body {
   flex-direction: column;
   gap: 1rem;
   margin: 1rem;
+  position: absolute;
+  top: 142%;
+  left: 0;
+  width: 94%;
 }
 
 .bigbuttons button {
@@ -548,8 +733,15 @@ body {
   background-color: #F08381;
 }
 
+.last-section {
+  position: absolute;
+  top: 169.3%;
+  left: 0;
+}
+
 .last-section div { 
-  height:315px ;
+  height:315px;
+  width: 100%;
   display: flex;
   align-items: center;
   padding: 1rem;
@@ -571,6 +763,9 @@ footer {
   margin-top: 1rem;
   justify-self: center;
   align-self: center;
+  position: absolute;
+  top: 182%;
+  left: 8%;
 }
 
 footer h2 {
