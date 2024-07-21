@@ -1,4 +1,16 @@
+document.querySelectorAll('.popup-container').forEach(container => {
+    const popupCard = container.querySelector('.popup-card');
+    
+    container.addEventListener('mousemove', (e) => {
+        popupCard.style.display = 'block';
+        popupCard.style.left = `${e.clientX + -20}px`;
+        popupCard.style.top = `${e.clientY + -650}px`;
+    });
 
+    container.addEventListener('mouseleave', () => {
+        popupCard.style.display = 'none';
+    });
+});
 
 // const elts = {
 //     text1: document.getElementById("text1"),

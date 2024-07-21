@@ -33,10 +33,10 @@
             </ul>
             <ul class="desktopnav">
                 <li><a href="">CAMERON</a></li>
-                <li><a href="" class="desktop-links">About</a></li>
-                <li><a href="" class="desktop-links">Work</a></li>
-                <li><a href="" class="desktop-links">Contact</a></li>
-                <li onclick=showSidebar()><a href="#" class="navbar"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
+                <li><a href="" id="desktop-links">About</a></li>
+                <li><a href="" id="desktop-links">Work</a></li>
+                <li><a href="" id="desktop-links">Contact</a></li>
+                <li onclick=showSidebar()><a href="#" class="navbar" id="menuButton-on"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
                     <path d="M1.8418 1.75879H18.3457M1.8418 7.01003H18.3457M1.8418 12.2613H18.3457" stroke="black" stroke-width="2.00047" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg></a></li>
             </ul>
@@ -142,15 +142,126 @@
         </div>
         <div class="projects">
             <aside id="asideOne">
+                <svg id="figmaLogo" width="46" height="66" viewBox="0 0 46 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.918 0.833496C5.90989 0.833496 0.167969 6.57542 0.167969 13.5835C0.167969 17.671 2.24606 21.1622 5.26465 23.5002C2.24606 25.8381 0.167969 29.3293 0.167969 33.4168C0.167969 37.5043 2.24606 40.9955 5.26465 43.3335C2.24606 45.6715 0.167969 49.1627 0.167969 53.2502C0.167969 60.2582 5.90989 66.0002 12.918 66.0002C19.926 66.0002 25.668 60.2582 25.668 53.2502V43.3335V26.3335H32.7513C39.7594 26.3335 45.5013 20.5916 45.5013 13.5835C45.5013 6.57542 39.7594 0.833496 32.7513 0.833496H22.8346H12.918ZM12.918 6.50016H20.0013V20.6668H12.918C8.97238 20.6668 5.83464 17.5291 5.83464 13.5835C5.83464 9.6379 8.97238 6.50016 12.918 6.50016ZM25.668 6.50016H32.7513C36.6969 6.50016 39.8346 9.6379 39.8346 13.5835C39.8346 17.5291 36.6969 20.6668 32.7513 20.6668H25.668V6.50016ZM12.918 26.3335H20.0013V40.5002H12.918C8.97238 40.5002 5.83464 37.3624 5.83464 33.4168C5.83464 29.4712 8.97238 26.3335 12.918 26.3335ZM34.168 26.3335C31.9136 26.3335 29.7516 27.229 28.1576 28.8231C26.5635 30.4171 25.668 32.5792 25.668 34.8335C25.668 37.0878 26.5635 39.2498 28.1576 40.8439C29.7516 42.438 31.9136 43.3335 34.168 43.3335C36.4223 43.3335 38.5843 42.438 40.1784 40.8439C41.7724 39.2498 42.668 37.0878 42.668 34.8335C42.668 32.5792 41.7724 30.4171 40.1784 28.8231C38.5843 27.229 36.4223 26.3335 34.168 26.3335ZM12.918 46.1668H20.0013V53.2502C20.0013 57.1958 16.8636 60.3335 12.918 60.3335C8.97238 60.3335 5.83464 57.1958 5.83464 53.2502C5.83464 49.3046 8.97238 46.1668 12.918 46.1668Z" fill="black"/>
+                    </svg>                    
+                <div class="popup-container">
+                    <img src="./assets/images/hOPE-4-KIDS popup.png" alt="" class="popup-card">
+                    <p>Hope 4 Kids</p>
+                    <button>View More <svg width="16" height="16" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 16.5L16.5 1.5M16.5 1.5H5.25M16.5 1.5V12.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></button>
+                </div>
+            </aside>
+        </div>
+        <div class="mobile-hope">
+            <h1>National Security Agency</h1>
+        </div>
+        <div id="card-container-NSA">
+            <img src="/UX_UI_HW_18/assets/images/NSA Home page.png" alt="National Security Agency" id="nsa-hero">
+            <img src="/UX_UI_HW_18/assets/images/NSA aligning.png" alt="National Security Agency" id="nsa-align">
+            <div id="card-contents-NSA">
+                <h1>National Security Agency</h1>
+                <div>UX/UI</div>
+                <div>IA</div>
+                <div>RE-DESIGN</div>
+            </div>
+        </div>
+        <div class="projects">
+            <aside>
+                <svg id="figmaLogo" width="46" height="66" viewBox="0 0 46 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.918 0.833496C5.90989 0.833496 0.167969 6.57542 0.167969 13.5835C0.167969 17.671 2.24606 21.1622 5.26465 23.5002C2.24606 25.8381 0.167969 29.3293 0.167969 33.4168C0.167969 37.5043 2.24606 40.9955 5.26465 43.3335C2.24606 45.6715 0.167969 49.1627 0.167969 53.2502C0.167969 60.2582 5.90989 66.0002 12.918 66.0002C19.926 66.0002 25.668 60.2582 25.668 53.2502V43.3335V26.3335H32.7513C39.7594 26.3335 45.5013 20.5916 45.5013 13.5835C45.5013 6.57542 39.7594 0.833496 32.7513 0.833496H22.8346H12.918ZM12.918 6.50016H20.0013V20.6668H12.918C8.97238 20.6668 5.83464 17.5291 5.83464 13.5835C5.83464 9.6379 8.97238 6.50016 12.918 6.50016ZM25.668 6.50016H32.7513C36.6969 6.50016 39.8346 9.6379 39.8346 13.5835C39.8346 17.5291 36.6969 20.6668 32.7513 20.6668H25.668V6.50016ZM12.918 26.3335H20.0013V40.5002H12.918C8.97238 40.5002 5.83464 37.3624 5.83464 33.4168C5.83464 29.4712 8.97238 26.3335 12.918 26.3335ZM34.168 26.3335C31.9136 26.3335 29.7516 27.229 28.1576 28.8231C26.5635 30.4171 25.668 32.5792 25.668 34.8335C25.668 37.0878 26.5635 39.2498 28.1576 40.8439C29.7516 42.438 31.9136 43.3335 34.168 43.3335C36.4223 43.3335 38.5843 42.438 40.1784 40.8439C41.7724 39.2498 42.668 37.0878 42.668 34.8335C42.668 32.5792 41.7724 30.4171 40.1784 28.8231C38.5843 27.229 36.4223 26.3335 34.168 26.3335ZM12.918 46.1668H20.0013V53.2502C20.0013 57.1958 16.8636 60.3335 12.918 60.3335C8.97238 60.3335 5.83464 57.1958 5.83464 53.2502C5.83464 49.3046 8.97238 46.1668 12.918 46.1668Z" fill="black"/>
+                    </svg>  
+                <div class="popup-container">
+                    <img src="./assets/images/NSA popup.png" alt="" class="popup-card">
+                    <p>National Security Agency</p>
+                    <button>View More <svg width="16" height="16" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 16.5L16.5 1.5M16.5 1.5H5.25M16.5 1.5V12.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></button>
+                </div>
+            </aside>
+        </div>
+    
+        <div class="mobile-hope">
+            <h1>FitBud</h1>
+        </div>
+        <div id="card-container-fitbud">
+            <img src="/UX_UI_HW_18/assets/images/fitbud-splash.png" alt="fitbud splash" id="fitbud1">
+            <img src="/UX_UI_HW_18/assets/images/fitbud-home.png" alt="fitbud home" id="fitbud2">
+            <div id="card-contents-fitbud">
+                <h1>FitBud</h1>
+                <div>UX/UI</div>
+                <div>MOBILE</div>
+                <div>APP</div>
+            </div>
+        </div>
+        <div class="projects">
+            <aside>
+                <svg id="figmaLogo" width="46" height="66" viewBox="0 0 46 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.918 0.833496C5.90989 0.833496 0.167969 6.57542 0.167969 13.5835C0.167969 17.671 2.24606 21.1622 5.26465 23.5002C2.24606 25.8381 0.167969 29.3293 0.167969 33.4168C0.167969 37.5043 2.24606 40.9955 5.26465 43.3335C2.24606 45.6715 0.167969 49.1627 0.167969 53.2502C0.167969 60.2582 5.90989 66.0002 12.918 66.0002C19.926 66.0002 25.668 60.2582 25.668 53.2502V43.3335V26.3335H32.7513C39.7594 26.3335 45.5013 20.5916 45.5013 13.5835C45.5013 6.57542 39.7594 0.833496 32.7513 0.833496H22.8346H12.918ZM12.918 6.50016H20.0013V20.6668H12.918C8.97238 20.6668 5.83464 17.5291 5.83464 13.5835C5.83464 9.6379 8.97238 6.50016 12.918 6.50016ZM25.668 6.50016H32.7513C36.6969 6.50016 39.8346 9.6379 39.8346 13.5835C39.8346 17.5291 36.6969 20.6668 32.7513 20.6668H25.668V6.50016ZM12.918 26.3335H20.0013V40.5002H12.918C8.97238 40.5002 5.83464 37.3624 5.83464 33.4168C5.83464 29.4712 8.97238 26.3335 12.918 26.3335ZM34.168 26.3335C31.9136 26.3335 29.7516 27.229 28.1576 28.8231C26.5635 30.4171 25.668 32.5792 25.668 34.8335C25.668 37.0878 26.5635 39.2498 28.1576 40.8439C29.7516 42.438 31.9136 43.3335 34.168 43.3335C36.4223 43.3335 38.5843 42.438 40.1784 40.8439C41.7724 39.2498 42.668 37.0878 42.668 34.8335C42.668 32.5792 41.7724 30.4171 40.1784 28.8231C38.5843 27.229 36.4223 26.3335 34.168 26.3335ZM12.918 46.1668H20.0013V53.2502C20.0013 57.1958 16.8636 60.3335 12.918 60.3335C8.97238 60.3335 5.83464 57.1958 5.83464 53.2502C5.83464 49.3046 8.97238 46.1668 12.918 46.1668Z" fill="black"/>
+                    </svg>  
+                <div class="popup-container">
+                    <img src="./assets/images/Fitbud popup.png" alt="" class="popup-card">
+                    <p>FitBud</p>
+                    <button>View More <svg width="16" height="16" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 16.5L16.5 1.5M16.5 1.5H5.25M16.5 1.5V12.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></button>
+                </div>
+            </aside>
+        </div>
+        
+        <div class="mobile-hope">
+            <h1>TravMe</h1>
+        </div>
+        <div id="card-container-travme">
+            <img src="/UX_UI_HW_18/assets/images/travme-mockup.png" alt="Travme image" id="travme1">
+            <div id="card-contents-travme">
+                <h1>TravMe</h1>
+                <div>UX/UI</div>
+                <div>MOBILE</div>
+                <div>APP</div>
+            </div>
+        </div>
+        <div class="projects">
+            <aside class="travmeborder">
+                <svg id="figmaLogo" width="46" height="66" viewBox="0 0 46 66" fill="filter" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.918 0.833496C5.90989 0.833496 0.167969 6.57542 0.167969 13.5835C0.167969 17.671 2.24606 21.1622 5.26465 23.5002C2.24606 25.8381 0.167969 29.3293 0.167969 33.4168C0.167969 37.5043 2.24606 40.9955 5.26465 43.3335C2.24606 45.6715 0.167969 49.1627 0.167969 53.2502C0.167969 60.2582 5.90989 66.0002 12.918 66.0002C19.926 66.0002 25.668 60.2582 25.668 53.2502V43.3335V26.3335H32.7513C39.7594 26.3335 45.5013 20.5916 45.5013 13.5835C45.5013 6.57542 39.7594 0.833496 32.7513 0.833496H22.8346H12.918ZM12.918 6.50016H20.0013V20.6668H12.918C8.97238 20.6668 5.83464 17.5291 5.83464 13.5835C5.83464 9.6379 8.97238 6.50016 12.918 6.50016ZM25.668 6.50016H32.7513C36.6969 6.50016 39.8346 9.6379 39.8346 13.5835C39.8346 17.5291 36.6969 20.6668 32.7513 20.6668H25.668V6.50016ZM12.918 26.3335H20.0013V40.5002H12.918C8.97238 40.5002 5.83464 37.3624 5.83464 33.4168C5.83464 29.4712 8.97238 26.3335 12.918 26.3335ZM34.168 26.3335C31.9136 26.3335 29.7516 27.229 28.1576 28.8231C26.5635 30.4171 25.668 32.5792 25.668 34.8335C25.668 37.0878 26.5635 39.2498 28.1576 40.8439C29.7516 42.438 31.9136 43.3335 34.168 43.3335C36.4223 43.3335 38.5843 42.438 40.1784 40.8439C41.7724 39.2498 42.668 37.0878 42.668 34.8335C42.668 32.5792 41.7724 30.4171 40.1784 28.8231C38.5843 27.229 36.4223 26.3335 34.168 26.3335ZM12.918 46.1668H20.0013V53.2502C20.0013 57.1958 16.8636 60.3335 12.918 60.3335C8.97238 60.3335 5.83464 57.1958 5.83464 53.2502C5.83464 49.3046 8.97238 46.1668 12.918 46.1668Z" fill="black"/>
+                    </svg>  
+                <div class="popup-container">
+                    <img src="./assets/images/Travme popup.png" alt="" class="popup-card">
+                    <p>TravMe</p>
+                    <button>View More <svg width="16" height="16" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 16.5L16.5 1.5M16.5 1.5H5.25M16.5 1.5V12.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></button>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <!-- <section id="projectWork" class="mywork">
+        <div class="mobile-hope">
+            <h1>Hope 4 Kids</h1>
+        </div>
+        <div id="card-container">
+            <img src="/UX_UI_HW_18/assets/images/Hope-4-kids hero.png" alt="hope 4 kids">
+            <div id="card-contents">
+                <h1>Hope 4 kids</h1>
+                <div>UX/UI</div>
+                <div>IA</div>
+                <div>RE-DESIGN</div>
+            </div>
+        </div>
+        <div class="projects">
+            <aside id="asideOne">
                 <img src="./assets/images/figma-logo-nocolor.svg" alt="Figma Logo">
                 <div>
+                    <img src="./assets/images/hOPE-4-KIDS popup.png" alt="" class="popup-card">
                     <p>Hope 4 Kids</p>
                 </div>
             </aside>
-            <!-- <aside class="button-view">
+            <aside class="button-view">
                 <button >View More <img src="./assets/images/arrow-top-right.svg" alt="View More Projects"></button>
             </aside> -->
-        </div>
+        <!-- </div>
         <div class="mobile-hope">
             <h1>National Security Agency</h1>
         </div>
@@ -168,13 +279,14 @@
             <aside>
                 <img src="./assets/images/figma-logo-nocolor.svg" alt="Figma Logo">
                 <div>
+                    <img src="./assets/images/NSA popup.png" alt="" class="popup-card">
                     <p>National Security Agency</p>
                 </div>
-            </aside>
+            </aside> -->
             <!-- <aside class="button-view">
                 <button >View More <img src="./assets/images/arrow-top-right.svg" alt="View More Projects"></button>
             </aside> -->
-        </div>
+        <!-- </div>
 
         <div class="mobile-hope">
             <h1>FitBud</h1>
@@ -193,13 +305,14 @@
             <aside>
                 <img src="./assets/images/figma-logo-nocolor.svg" alt="Figma Logo">
                 <div>
-                    <p>MotivateMe</p>
+                    <img src="./assets/images/Fitbud popup.png" alt="" class="popup-card">
+                    <p>FitBud</p>
                 </div>
-            </aside>
+            </aside> -->
             <!-- <aside class="button-view">
                 <button >View More <img src="./assets/images/arrow-top-right.svg" alt="View More Projects"></button>
             </aside> -->
-        </div>
+        <!-- </div>
         
         <div class="mobile-hope">
             <h1>TravMe</h1>
@@ -217,15 +330,16 @@
             <aside class="travmeborder">
                 <img src="./assets/images/figma-logo-nocolor.svg" alt="Figma Logo">
                 <div>
+                    <img src="./assets/images/Travme popup.png" alt="" class="popup-card">
                     <p>TravMe</p>
                 </div>
-            </aside>
+            </aside> -->
             <!-- <aside class="button-view">
                 <button >View More <img src="./assets/images/arrow-top-right.svg" alt="View More Projects"></button>
             </aside> -->
-        </div>
+        <!-- </div>
 
-    </section>
+    </section> -->
 
 </section>
 
@@ -267,6 +381,30 @@
         sidebar.style.display = 'none'
     }
     </script>
-    
+    <script>
+    document.querySelectorAll('.projects').forEach(project => {
+        project.addEventListener('mouseover', function (event) {
+          let cardContainers = this.querySelectorAll('#card-container, #card-container-NSA, #card-container-fitbud, #card-container-travme');
+          cardContainers.forEach(cardContainer => {
+            if (cardContainer) {
+              cardContainer.style.display = 'flex';
+              project.addEventListener('mousemove', function (e) {
+                cardContainer.style.top = e.clientY + 'px';
+                cardContainer.style.left = e.clientX + 'px';
+              });
+            }
+          });
+        });
+      
+        project.addEventListener('mouseout', function () {
+          let cardContainers = this.querySelectorAll('#card-container, #card-container-NSA, #card-container-fitbud, #card-container-travme');
+          cardContainers.forEach(cardContainer => {
+            if (cardContainer) {
+              cardContainer.style.display = 'none';
+            }
+          });
+        });
+      });
+</script>
 </body>
 </html>

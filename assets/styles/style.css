@@ -135,8 +135,8 @@ body {
 .hero-img {
  z-index: -999;
  position: absolute;
- left: 45%;
- top: 20%;
+ right: -55%;
+ bottom: 0;
  overflow: hidden;
 }
 
@@ -177,8 +177,7 @@ body {
 #header-nav .sidebar a:hover{
   background-color: black;
 }
-
-#header-nav .desktop-links{
+#desktop-links{
   display: none;
 }
 
@@ -321,6 +320,7 @@ body {
   width: 98%;
   justify-self: center;
   font-size: 3rem;
+  margin: auto;
   font-style: normal;
   font-weight: 500;
 }
@@ -333,7 +333,7 @@ body {
                         "tools skillsgrid";
   height: 420px;
   width: 408px;
-  margin: .5rem;
+  margin: auto;
 }
 
 .skills ul{
@@ -352,6 +352,10 @@ body {
 
 .timeframe{
   height: 21px;
+}
+
+.tools h3 {
+  margin-top: 2rem;
 }
 
 .skill {
@@ -376,12 +380,9 @@ body {
   align-self: flex-start;
 }
 
-.tools h3 {
-  margin: 0;
-}
 
 .mywork {
-  margin-top: 2.5rem;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -426,9 +427,10 @@ body {
   display: flex;
   align-items: center;
   text-wrap: nowrap;
+  justify-content: space-between;
   height: 62px;
   margin: .5rem 0;
-  width: 75%;
+  width: 100%;
   border-left: solid 1px;
   padding: 1rem;
 }
@@ -785,4 +787,354 @@ footer a:hover {
 
 .social-links {
   display: none;
+}
+
+@media only screen and (min-width: 700px){
+
+  .hero-img {
+    right: -5%;
+  }
+
+  .about aside {
+    width: 50%;
+  }
+
+  .about {
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 25%;
+  }
+
+  .about h1 {
+    width: 35%;
+  }
+
+  .workhistory {
+    background-color: rgba(0, 0, 0, 0);
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
+
+  .workhistory div {
+    width: 45%;
+  }
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "time-frame discipline tools skillsgrid";
+  height: fit-content;
+  justify-content: space-evenly;
+  width: 94%;
+  margin: .5rem;
+}
+  
+#card-container img {
+  position:relative;
+  top: 2rem;
+  left: 5rem;
+}
+
+#card-container {
+  height: fit-content;
+}
+
+#card-contents {
+  position: relative;
+  top: 10%;
+  left: 0;
+  margin: 1rem;
+  width: 40%;
+}
+
+#card-contents div {
+  align-self: flex-start;
+}
+
+#card-contents h1 {
+  flex-grow: 1;
+  width: 100%;
+}
+
+
+
+#nsa-hero {
+  position: absolute;
+  transform: scale(2);
+  top: 25%;
+  left: 61%;
+}
+
+#nsa-align {
+  position: absolute;
+  transform: scale(2);
+  top: 20%;
+  left: 13%;
+}
+
+#card-container-NSA {
+  height: 900px;
+  justify-content: space-between;
+}
+
+#card-contents-NSA {
+  position: relative;
+  top: 85%;
+  left: 0;
+  margin: 1rem;
+  width: 40%;
+}
+
+#card-contents-NSA div {
+  align-self: flex-start;
+}
+
+#card-contents-NSA h1 {
+  flex-grow: 1;
+  width: 100%;
+}
+
+
+#fitbud1 {
+  position: absolute;
+  transform: scale(1.8);
+  top: 50%;
+  left: 45%;
+}
+
+#fitbud2 {
+  position: absolute;
+  transform: scale(1.8);
+  top: 8%;
+  left: 10%;
+}
+
+#card-container-fitbud {
+  height: 900px;
+  justify-content: space-between;
+}
+
+#card-contents-fitbud {
+  position: relative;
+  top: 85%;
+  left: 0;
+  margin: 1rem;
+  width: 40%;
+}
+
+#card-contents-fitbud div {
+  align-self: flex-start;
+}
+
+#card-contents-fitbud h1 {
+  flex-grow: 1;
+  width: 100%;
+}
+
+#travme1 {
+  position: absolute;
+  transform: scale(1.8);
+  top: 30%;
+  left: 20%;
+}
+
+#card-container-travme {
+  height: 900px;
+  justify-content: space-between;
+}
+
+#card-contents-travme {
+  position: relative;
+  top: 85%;
+  left: 0;
+  margin: 1rem;
+  width: 40%;
+}
+
+#card-contents-travme div {
+  align-self: flex-start;
+}
+
+#card-contents-travme h1 {
+  flex-grow: 1;
+  width: 100%;
+}
+
+}
+
+@media only screen and (min-width: 850px){
+
+  #menuButton-on {
+    display: none;
+  }
+
+  #desktop-links {
+    display: flex;
+  }
+
+  .workhistory h3 {
+    font-size: 1rem;
+  }
+
+  .workhistory div {
+    margin-left: 0;
+  }
+
+  .mobile-hope {
+    display: none;
+  }
+
+  #card-container {
+    display: none;
+  }
+
+  #card-container-NSA {
+    display: none;
+  }
+
+  #card-container-fitbud {
+    display: none;
+  }
+
+  #card-container-travme {
+    display: none;
+  }
+
+  .projects {
+    display: flex;
+  }
+
+  .projects:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .popup-card {
+    position: absolute;
+    display: none;
+    width: 300px; /* Adjust the size as needed */
+    height: auto;
+    z-index: 999;
+    pointer-events: none; /* Ensure it does not interfere with mouse events */
+}
+
+.popup-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+
+.projects {
+  background-color: rgba(255, 255, 255, 0); /* Default background color */
+  color: black; /* Default text color */
+}
+
+.projects:hover {
+  background-color: black;
+  color: white;
+}
+
+
+
+.projects:hover #figmaLogo {
+  stroke: white; /* Change the stroke color to white when hovering over .projects */
+}
+
+#figmaLogo {
+  transition: stroke 0.3s ease; /* Smooth transition for the stroke color */
+  margin: 1rem;
+}
+
+.popup-container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  border: none;
+  border-radius: .5rem;
+  padding: .5rem 1rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+}
+
+.bigbuttons {
+  width: 96%;
+}
+
+.popup-container button:hover {
+  border: solid 1px white;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.last-section div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.last-section div h1{
+  font-size: 4rem;
+}
+
+#projectTitle {
+  margin: auto;
+}
+
+#projectSkills {
+  margin: auto;
+}
+
+#projectWork {
+  margin: auto;
+}
+}
+
+@media only screen and (min-width: 1400px){
+
+  .first-section {
+    padding: 2rem;
+  }
+
+  .hero-img {
+    right: 8%;
+  }
+
+  .about aside p{
+    width: 504px;
+    font-size: 1.5rem;
+  }
+
+  .about aside {
+    width: fit-content;
+  }
+
+  .about h1 {
+    width: 30%;
+}
+
+  .workhistory {
+    width: 50%;
+    margin-left: 42.5rem;
+  }
+
+  .skill {
+    height: fit-content;
+  }
+
+  .skills-grid {
+    gap: .5rem;
+  }
+
+  .bigbuttons {
+    width: 98%;
+  }
 }
