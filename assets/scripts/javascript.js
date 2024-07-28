@@ -12,6 +12,7 @@ document.querySelectorAll('.popup-container').forEach(container => {
     });
 });
 
+
 // const elts = {
 //     text1: document.getElementById("text1"),
 //     text2: document.getElementById("text2")
